@@ -1,0 +1,314 @@
+#headerLogo{
+    background-color: #D9D9D9;
+}
+#imgHeader{
+    margin-left: 42%;
+    margin-right: 25%;
+}
+#inscription{
+   
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #343A40;
+    color: #fff;
+    border: none;
+}
+
+#connexion{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    color: #343A40;
+    border-color: #343A40 ;
+}
+
+.nav-item{
+    margin-left: 250px;
+}
+
+/* css slider 
+    background-image: linear-gradient(to right, #2B2F3A, #0D0E12);
+*/
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    
+}
+.slider::before{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #D9D9D9;
+    
+}
+.title{
+    position: absolute;
+    top:4%;
+    right: 43%;
+    text-align: right;
+    color: #343A40;
+    font-size: 40px;
+    width: 40%;
+    font-family: 'Julius Sans One';
+}
+
+.title3{
+    position: absolute;
+    top: 3%;
+    right: 43%;
+    text-align: right;
+    color: #343A40;
+    font-size: 40px;
+    width: 40%;
+    font-family: 'Julius Sans One';
+}
+
+.images{
+    position: relative;
+    top: -110%;
+    left: 50%;
+    --rotate: 0deg;
+    transform: translate(-50%, 50%) rotate(var(--rotate));
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+    outline: 5px dashed #fff5;
+    outline-offset: -100px;
+    background-color: #c697519d;
+    
+ 
+}
+.images .item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    rotate: calc(60deg * var(--i));
+}
+.images .item img{
+    height: 250px;
+}
+
+.content{
+    position: absolute;
+    top: 77%;
+    left: 46%;
+    width: 700px;
+}
+.content h1{
+    color: white;
+    font-size: x-large;
+}
+.content button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #343A40;
+    color: #fff;
+    border: none;
+    
+}
+.content .item{
+    display: none;
+}
+.content .item.active{
+    display: block;
+}
+@keyframes showContent{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }to{
+        opacity: 1;
+    }
+}
+.content .item.active h1{
+    opacity: 0;
+    animation: showContent 0.5s ease-in-out 1 forwards;
+}
+
+.content .item.active button{
+    opacity: 0;
+    animation: showContent 0.5s 0.6s ease-in-out 1 forwards;
+}
+
+
+#prev,
+#next{
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 250px;
+    font-size: 100px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.3
+}
+#next{
+    left: unset;
+    right: 250px;
+}
+#next:hover,
+#prev:hover{
+    opacity: 1
+}
+
+.hr-lines:after{
+    content:" ";
+    height: 5px;
+    width: 40px;
+    background: #C69751;
+    display: block;
+    position: absolute;
+    top: 38%;
+   margin-left: 640px;
+  }
+  .hr-lines::before{
+    content:" ";
+    height: 5px;
+    width: 40px;
+    background: #C69751;
+    display: block;
+    position: absolute;
+    top: 38%;
+    margin-left: 380px;
+  }
+
+  #bloc3{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30%;
+
+  }
+
+  #cardBox{
+    position: absolute;
+    top: 90px;
+    left: 15%;
+
+  }
+
+  #cardBoxContent{
+    position: relative;
+    left: 30px;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  #buttonBox{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #C69751;
+    color: #fff;
+    border: none;
+  }
+
+  .formInscriptionConnexion{
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 15%;
+  }
+
+  .titleInscriptionConnexionPage{
+    font-family: 'Julius Sans One';
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+
+  .goldButton{
+    padding: 10px 120px;
+    border-radius: 20px;
+    background-color: #C69751;
+    color: #fff;
+    border: none;
+    margin-bottom: 5%;
+  }
+
+  .footer{
+    background-color: #343A40;
+   
+  }
+  #baguette{
+    position: absolute;
+    left: -14%;
+    top: 27%;
+  }
+
+  #someSushis{
+    position: absolute;
+    right: 0%;
+    top: 45%;
+  }
+
+  .footerButton{
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+
+  .menu{
+    background-color: #151313;
+    width: 100%;
+    height: 100%;
+  }
+
+  .filter{
+    position: relative;
+    left:0%;
+    width: 15%;
+    height: 100vh;
+    background-color: #000000;
+    border-right: 3px #C69751 double;
+  }
+
+  .filter-card{
+    height: 17%;
+    border-bottom: 1px #C69751 solid;
+    text-align: center;
+    padding-top: 50px;
+    font-size: large;
+  }
+  .filter-card a{
+    color: #D9D9D9;
+    font-family: 'Julius Sans One';
+  }
+
+  #cardBox2{
+    position: absolute;
+    top: 180px;
+    left: 20%;
+
+  }
+
+  #buttonBox2{
+    position: absolute;
+    top: 65px;
+    right: 60px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #C69751;
+    color: #fff;
+    border: none;
+  }
+  #buttonBox3{
+    position: absolute;
+    top: 130px;
+    right: 60px;
+    padding: 10px 47px;
+    border-radius: 10px;
+    background-color: #343A40;
+    color: #fff;
+    border: none;
+  }
